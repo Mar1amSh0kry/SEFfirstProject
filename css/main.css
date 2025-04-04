@@ -334,9 +334,10 @@ text-transform: capitalize;
 }
 
 .choose-us h2::after{
-    width: 7%;
-    bottom :600px;
-    left: 20px;
+    height: 2.5px;
+    width: 8%;
+    bottom :-6px;
+    left: 5px;
 }
 
 .choose-us p{
