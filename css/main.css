@@ -4,6 +4,7 @@ margin:0 ;
 box-sizing:border-box ;  
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 text-transform: capitalize;
+scroll-behavior: smooth;
 }
 
 :root{
@@ -137,6 +138,7 @@ h2::after{
     height: 25px;
     width: 200px;
     margin: 15px;
+    padding-left: 10px;
 }
 
 /*< !-- /////////////////////////////////////////////////////////////////////////////////////////////////-->*/
@@ -247,12 +249,14 @@ button{
     color:#797676;
 }
 
-.welcome-page .container .parts .part i,.our-offers .container .parts i{
+.welcome-page .container .parts .part i,
+.our-offers .container .parts i{
     font-size: x-large;
     color:var(--important-color);
 }
 
-.welcome-page .container .parts .part h3,.our-offers .container .parts h3{
+.welcome-page .container .parts .part h3,
+.our-offers .container .parts h3{
     font-size: 25px;
 }
 
@@ -273,27 +277,30 @@ button{
     background-color:rgba(101, 101, 245, 0.5);
     opacity: 0;
     z-index: -1;
+    border-radius: 10px;
 }
 
 .welcome-page .container .parts .part:hover::after, 
 .our-offers .container .parts .p:hover::after{
     opacity: 1;
-    transition: 0.6s;
+    transition: all 0.6s linear;
     width: 100%;
     height: 100%;
 }
 
 .welcome-page .container .parts .part:hover h3 {
     color: white;
+    transition: all 0.6s linear;
 }
 
 .welcome-page .container .parts .part:hover p {
-
+    transition: all 0.6s linear;
     color: black;
 }
 
 .welcome-page .container .parts .part:hover i {
-    color:rgb(79, 79, 168)
+    color:rgb(79, 79, 168);
+    transition: all 0.6s linear;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -432,10 +439,12 @@ button{
 
 .our-offers .container .p:hover h3{
     color: var(--important-color);
+    transition: all 0.6s linear;
 }
 
 .our-offers .container .p:hover p {
     color: rgb(0, 0, 0);
+    transition: all 0.6s linear;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
@@ -606,10 +615,12 @@ button{
 
 .pricing .part:hover h4{
     color: var(--important-color);
+    transition: all 0.5s linear;
 }
 
 .pricing .part:hover h3,p {
     color: black;
+    transition: all 0.5s linear;
 }
 
 .price p{
@@ -759,7 +770,8 @@ button{
     background-color: var(--important-color);
     color: white;
     visibility: hidden;
-    
+    z-index: 10;
+    transition: all 0.5s linear;
 }
 
 .team .part .i1{
@@ -782,15 +794,16 @@ button{
 
 .team .part:hover::after{
     z-index: 2;
-    transition: 0.5s;
 }
 
 .team .part:hover h4{
     color: white;
+    transition: 0.5s;
 }
 
 .team .part:hover p {
     color: var(--important-color);
+    transition: all 0.5s linear;
 }
 
 .team .part:hover i{
@@ -861,7 +874,7 @@ button{
     top: 0;
     left: 0;
     background-color: var(--important-color);
-    transition: 0.5s;
+    transition: all 0.5s linear;
     height: 0;
     width: 100%;
     opacity: 0;
@@ -869,14 +882,17 @@ button{
 
 .news .part:hover span{
     color: rgb(114, 6, 216);
+    transition: all 0.5s linear;
 }
 
 .news .part:hover p {
     color: rgb(114, 6, 216);
+    transition: all 0.5s linear;
 }
 
 .news .part:hover h4 {
     color: white;
+    transition: all 0.5s linear;
 }
 
 .news .part:hover::after {
